@@ -1,0 +1,230 @@
+/* فونت و استایل پایه */
+body {
+    font-family: "Vazirmatn", "Tahoma", Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #2b2b2b;
+    direction: rtl;
+}
+
+/* هدر و ناوبری */
+header {
+    background: #1976d2;
+    color: #fff;
+    padding: 24px 0 16px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(25, 118, 210, 0.08);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+nav a:hover {
+    background: #1565c0;
+}
+
+h1 {
+    margin: 0 0 8px 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+/* بخش اصلی و محتوا */
+main {
+    max-width: 720px;
+    margin: 32px auto;
+    background: #fff;
+    box-shadow: 0 8px 32px rgba(25, 118, 210, 0.07);
+    border-radius: 12px;
+    padding: 32px 24px 24px 24px;
+}
+
+/* عنوان و پاراگراف */
+h2 {
+    color: #1976d2;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 1.07rem;
+    margin-bottom: 12px;
+}
+
+/* تصویر */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 8px;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.09);
+}
+
+/* دکمه افزودن مخاطب جدید (صفحه اصلی و فرم) */
+.btn-add-contact {
+    display: inline-block;
+    background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+    color: #fff;
+    padding: 12px 32px;
+    margin: 24px 0;
+    font-size: 1.13rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.12);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.13s, box-shadow 0.18s, background 0.2s;
+}
+.btn-add-contact:hover {
+    background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(25, 118, 210, 0.18);
+    color: #fff;
+}
+
+/* دکمه بازگشت */
+.btn-back {
+    display: inline-block;
+    background: #eee;
+    color: #1976d2;
+    padding: 8px 18px;
+    margin-top: 14px;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 1px solid #1976d2;
+    transition: background 0.2s;
+}
+.btn-back:hover {
+    background: #1976d2;
+    color: #fff;
+}
+
+/* استایل فرم افزودن مخاطب */
+form {
+    max-width: 550px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 32px 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(25, 118, 210, 0.12);
+}
+
+/* استایل fieldset و legend */
+fieldset {
+    border: 2px solid #1976d2;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    padding: 16px 14px 14px 14px;
+    background: #f9fbff;
+}
+legend {
+    color: #1565c0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+/* استایل label و input و textarea */
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 500;
+    color: #2457b2;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 14px;
+    border: 1px solid #b6c7e2;
+    border-radius: 7px;
+    font-size: 1rem;
+    background: #f7f9fc;
+    transition: border-color 0.2s;
+}
+input:focus, textarea:focus {
+    border-color: #1976d2;
+    outline: none;
+}
+
+/* دکمه‌های فرم */
+button[type="submit"], button[type="reset"] {
+    background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 11px 28px;
+    margin: 16px 8px 0 0;
+    font-size: 1.09rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.09);
+    transition: background 0.17s, transform 0.15s;
+}
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
+    transform: scale(1.05);
+}
+button[type="reset"]:hover {
+    background: #b8c6db;
+    color: #1976d2;
+    transform: scale(1.05);
+}
+
+/* فوتر */
+footer {
+    background: #eee;
+    color: #444;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 0.97rem;
+    margin-top: 36px;
+    border-top: 1px solid #d1d1d1;
+    border-radius: 0 0 12px 12px;
+}
+
+/* واکنش‌گرا برای موبایل */
+@media (max-width: 700px) {
+    main {
+        padding: 16px 8px;
+        max-width: 98vw;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.07rem;
+    }
+    nav ul {
+        gap: 12px;
+        flex-direction: column;
+    }
+    form {
+        padding: 18px 7px;
+        max-width: 98vw;
+    }
+    fieldset {
+        padding: 10px 5px 7px 5px;
+    }
+}
