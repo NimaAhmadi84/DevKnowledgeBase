@@ -7,7 +7,7 @@
 ### 🗓️ ۱۴۰۴/۰۶/۲۲
 **✅ امروز یاد گرفتم:**  
 اتصال PHP به پایگاه داده MySQL  
-[دیدن کد](https://github.com/NimaAhmadi84/php-learning-notes/blob/main/snippets/database.php)
+[دیدن کد](https://github.com/NimaAhmadi84/DevKnowledgeBase/blob/main/php/snippets/database.php)
 
 **🎯 نکات کلیدی:**  
 - استفاده از PDO برای اتصال امن  
