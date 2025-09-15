@@ -9,7 +9,7 @@ try {
     if ($conn->connect_error) {
         throw new Exception("Database connection failed ".mysqli_connect_error());
     }
-    echo "Connected successfully";
+    $conn->set_charset("utf8");
 } catch (Exception $e) {
     die("Connection failed: " . $e->getMessage());
 }
